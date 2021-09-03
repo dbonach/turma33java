@@ -12,8 +12,10 @@ public class ex4 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		while (index < 150) {
-			System.out.print("Qual eh a idade da " + (index + 1) + "° pessoas? ");
+		while (index < 151) {
+			index++;
+			
+			System.out.print("Qual eh a idade da " + index + "° pessoas? ");
 			int idade = scanner.nextInt();
 			
 			System.out.println();
@@ -71,6 +73,5 @@ public class ex4 {
 				+  nervosasComMaisQuarenta);
 		System.out.println("O numero de pessoas calmas com menos de 18 anos eh: " 
 				+ calmasComMenosDezoito);
-		
 	}
 }
