@@ -14,6 +14,5 @@ public class TestaAnimais {
 		
 		Preguica preguica = new Preguica("Dona Preguica", 14);
 		preguica.subirArvore();
-		preguica.falar();
 	}
 }
