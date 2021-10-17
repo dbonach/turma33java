@@ -26,6 +26,17 @@ public class User {
 	@NotNull
 	@Size(min = 1, max = 255)
 	private String hashcode;
+	
+	public User() {
+	}
+
+	public User(Long id, @NotNull @Size(min = 2, max = 100) String name, @NotNull @Size(min = 2, max = 100) String user,
+			@NotNull @Size(min = 1, max = 255) String hashcode) {
+		this.id = id;
+		this.name = name;
+		this.user = user;
+		this.hashcode = hashcode;
+	}
 
 	public Long getId() {
 		return id;
