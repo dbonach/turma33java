@@ -13,16 +13,12 @@ let itemCount = 0;
 let uncheckedCount = 0;
 
 function newTodo() {
-  // if (!new_todo) {
   let todo = prompt("Enter a new todo: ");
 
   new_todo = {
     "todo": todo,
     "checked": false
   };
-
-  //   saveItem(new_todo);
-  // }
 
   // Create list element
   let list_elem = document.createElement("li");
@@ -57,9 +53,6 @@ function newTodo() {
 }
 
 function check(event) {
-  // todoText = event.path[1].childNodes[1].innerHTML;
-  // updateItem(todoText);
-
   if (event.target.checked) {
     uncheckedCount -= 1;
   } else {
