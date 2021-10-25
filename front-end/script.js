@@ -69,11 +69,12 @@ function check(event) {
 }
 
 function removeItem(event) {
+  if (!event.path[1].childNodes[0].checked) uncheckedCount -= 1;
+
   todoText = event.path[1].childNodes[1].innerHTML;
   event.path[1].remove();
 
   itemCount -= 1;
-  uncheckedCount -= 1;
   itemCountSpan.innerHTML = itemCount;
   uncheckedCountSpan.innerHTML = uncheckedCount;
 }
