@@ -31,3 +31,24 @@ html, body {
   width: 50%;
   text-align: center;
 }
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.delete {
+  color: red;
+  font-family: 'Indie Flower', cursive;
+  border: none;
+  background-color: white;
+  line-height: 1rem;
+  margin-left: 0.25rem;
+  font-size: 1.5rem;
+}

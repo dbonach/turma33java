@@ -4,19 +4,22 @@
 <head>
   <title>Todo App</title>
   <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container center wrapper">
     <h1>My Todo App</h1>
     <div class="counters">
-      <span class="counter">Item count: <span>0</span></span>
-      <span class="counter">Unchecked count: <span>0</span></span>
+      <span class="counter">Item count: <span id="item-count">0</span></span>
+      <span class="counter">Unchecked count: <span id="unchecked-count">0</span></span>
     </div>
-    <button>New Todo</button>
-    <ul>
+    <button onClick="newTodo()">New Todo</button>
+    <ul class="todo-list" id="todo-list">
     </ul>
   </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
