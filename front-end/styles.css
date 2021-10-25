@@ -1,0 +1,33 @@
+html, body {
+  background-color: #eee;
+  margin: 0;
+  padding: .5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.wrapper {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px 0 #aaa;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 90vh;
+  align-items: center;
+}
+
+.counters {
+  display: flex;
+  width: 100%;
+}
+
+.counter {
+  width: 50%;
+  text-align: center;
+}
